@@ -12,9 +12,15 @@ func main() {
 
 	// card := "Ace of spades" // 2nd way of declaration
 
-	var card string // We can first only declare variable and then later initialize it
-	card = "Ace of spades"
+	// var card string // We can first only declare variable and then later initialize it
+	// card = "Ace of spades"
+
+	card := newCard()
 	
 
 	fmt.Println(card)
+}
+
+func newCard () string {
+	return "Five of Diamonds"
 }
