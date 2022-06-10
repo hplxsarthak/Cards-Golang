@@ -1,24 +1,16 @@
 package main
 
 import "fmt"
-// card := "Ace of spades" // error as initialization is outside function body
-
-// var card string 
-// We can declare variable outside but can't initialise it
-
 
 func main() {
-	// var card string = "Ace of spades" // 1st way of declaration
 
-	// card := "Ace of spades" // 2nd way of declaration
+	cards := [] string {"Ace of spades", newCard()}
 
-	// var card string // We can first only declare variable and then later initialize it
-	// card = "Ace of spades"
+	cards = append(cards, "Six of hearts")
 
-	card := newCard()
-	
-
-	fmt.Println(card)
+	for i,card := range cards {
+		fmt.Println(i,card)
+	}
 }
 
 func newCard () string {
